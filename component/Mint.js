@@ -96,14 +96,10 @@ const isConnected = Boolean(accounts[0]);
       <Text color={"lightblue"}>Planes are joyful on-chain paper planes that feature a richly diverse and unique pool of non-rare traits. What's more, each Plane unlocks club membership and additional benefits the longer you hold them.
       <br/>So, what are you waiting for? Grab a smart contract, fold it up, and let it fly in the Metaverse
       </Text>  
-     <Box p="1" maxW="480px" borderWidth="1px">
-    <Center height={"auto"}>
-      <div className="no1" fontSize={"10em"}>{amountMinted}
-      </div>
-    </Center>
-    
-    </Box>
-     <Center height={"auto"}>
+      <Center height={"auto"}>
+        <div className="no1" fontSize={"10em"}>{amountMinted}</div>
+      </Center>
+      <Center height={"auto"}>
       <Stack textAlign={"center"} >
       <div className="no2" fontSize={"5em"}>7777</div>
         <Box p="5" maxW="480px" borderWidth="1px">
