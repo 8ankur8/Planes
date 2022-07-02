@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,600&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #12192C;
+  overflow-x: hidden;
+  font-family: 'Karla', sans-serif;;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.head {   
+  font-size:3em;
+  font-Weight: 500;
+  letter-Spacing: -0.05em ;
+  width: 50%;
+  background : linear-gradient(-70deg, #54dddf, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin:0;
+  text-decoration:dotted;
+  filter: hue-rotate(110deg);
+  animation: hue 2s linear infinite;
+
+}
+
+.no1 {   
+  font-size:8em;
+  font-Weight: 500;
+  background : linear-gradient(-70deg, #54dddf, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin:0;
+
+}
+
+.no2 {   
+  font-size:5em;
+  font-Weight: 500;
+  background : linear-gradient(-70deg, #54dddf, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin:0;
+  
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.neon {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 20px;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  display: block;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.neon:hover {
+  background: #54dddf;
+    color: #050801;
+    box-shadow: 0 0 6px #54dddf,
+                0 0 200px #54dddf;;
+}
+
+a:nth-child(1){
+  filter: hue-rotate(270deg);
+}
+a:nth-child(3){
+  filter: hue-rotate(110deg);
+}
+
+input {
+  padding: 4px 0;
+  font-size: 16px;
+  display: block;
+  margin: 3px;
+  background: rgb(0, 0, 0);
+  border-radius: 3px;
+  text-align: center;
+  color: beige;
+  border: none;
+  width: 98%;
+}
+
+a span {
+  position: absolute;
+}
+
+a span:nth-child(1){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#03e9f4);
+  animation: animate 1s linear infinite;
+  animation-delay: 0.50s;
+}
+@keyframes animate{
+  0%{
+      right: -100%;
+  } 
+  50%{
+    right:50%;
+  }
+  100%{
+    right:100%;
+  }
+}
+
+a span:nth-child(2){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#03e9f4);
+  animation: animate1 1s linear infinite;
+  animation-delay: 0.50s;
+}
+@keyframes animate1{
+  0%{
+    left: -100%;
+  } 
+  50%{
+    left:50%;
+  }
+  100%{
+    left:100%;
+  }
+}
+
+@keyframes hue{
+  0%,100%{
+      filter: hue-rotate(270deg);
+  } 
+  25%,75%{
+    filter: hue-rotate(110deg);
+  }
+  50%{
+    filter: hue-rotate(0deg);
+  }
+}
+
+
+
