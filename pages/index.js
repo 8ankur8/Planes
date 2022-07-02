@@ -6,17 +6,6 @@ const Mint =dynamic(() => import("../component/Mint"),{ssr:false})
 
 import Planes from "../component/Planes"
 
-// function Rig({ mouse }) {
-//   const { camera, viewport } = useThree()
-//   useFrame((state) => {
-//     camera.position.x += (state.mouse.x * viewport.width - camera.position.x) * 0.0005
-//     camera.position.y += (-state.mouse.y * viewport.height - camera.position.y) * 0.0005
-//     camera.lookAt(0, 0, 0)
-//   })
-//   return null
-// }
-
-
 export default function Home() {
   
   return (
