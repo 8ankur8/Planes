@@ -1,6 +1,6 @@
 //export const address = "0xc3F5E8A98B3d97f19938E4673Fd97C7cfd155577"; // mainnet
 //export const address = "0x852900dCda9846a28486b641e5520Abf3cABc775"; // rinkeby
-
+//export const address = "0x9E589134D79A25E0e570f4F603bE4Cb7Fd2C73dA"; // goerli
 
 export const abi = [
     {
