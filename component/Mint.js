@@ -9,7 +9,7 @@ const { ethereum } = window
 
 
 const Mint = () => {
-  const [amountMinted, setAmountMinted] = useState(9);
+  const [amountMinted, setAmountMinted] = useState(1);
   const [success, setSuccess] = useState(false);
   const [input, setInput] = useState("");
   const [error, setError] = useState(null);
@@ -19,7 +19,7 @@ const Mint = () => {
    
   const friendRef = useRef();
 
-const contractAddress = '0xD94E2987F62Ca65c46C6eD9d0094F4244407f463';
+const contractAddress = '0x9E589134D79A25E0e570f4F603bE4Cb7Fd2C73dA';
 const provider = new ethers.providers.Web3Provider(ethereum,"any");
 
 // get the end user
@@ -46,7 +46,7 @@ const isConnected = Boolean(accounts[0]);
     if (contract) {
       contract
         .totalSupply()
-        .then((res) => setAmountMinted(res.toString(9)),handleError);
+        .then((res) => setAmountMinted(res.toString()),handleError);
     }
   }
 
@@ -97,7 +97,7 @@ const isConnected = Boolean(accounts[0]);
       <br/>So, what are you waiting for? Grab a smart contract, fold it up, and let it fly in the Metaverse
       </Text>  
       <Center height={"auto"}>
-        <div className="no1" fontSize={"10em"}>{amountMinted}</div>
+        <div className="no1" fontSize={"8em"}>{amountMinted}</div>
       </Center>
       <Center height={"auto"}>
       <Stack textAlign={"center"} >
@@ -105,7 +105,7 @@ const isConnected = Boolean(accounts[0]);
         <Box p="5" maxW="480px" borderWidth="1px">
         {txHash && (
           <Text textAlign="center" color={"tomato"}>
-            <Link isExternal href={`https://rinkeby.etherscan.io/tx/${txHash}`}>
+            <Link isExternal href={`https://goerli.etherscan.io/tx/${txHash}`}>
               On Etherscan
             </Link>
           </Text>
